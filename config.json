@@ -1,0 +1,59 @@
+{
+    "data": [
+      {
+        "id": "geoData",
+        "label": "Geographical Data",
+        "elements": [
+          {
+            "type": "DIMENSION",
+            "id": "location",
+            "label": "Location",
+            "options": {
+              "min": 1,
+              "max": 1,
+              "supportedTypes": ["GEO"]
+            }
+          },
+          {
+            "type": "METRIC",
+            "id": "intensity",
+            "label": "Intensity Metric",
+            "options": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    ],
+    "style": [
+      {
+        "id": "glowStyle",
+        "label": "Glow Style",
+        "elements": [
+          {
+            "type": "COLOR",
+            "id": "glowColor",
+            "label": "Glow Color",
+            "defaultValue": "#ffff00"
+          },
+          {
+            "type": "NUMBER",
+            "id": "glowRadius",
+            "label": "Glow Radius",
+            "defaultValue": 10
+          }
+        ]
+      }
+    ],
+    "interactions": [
+      {
+        "id": "onClick",
+        "supportedActions": ["FILTER"]
+      }
+    ],
+    "features": {
+      "enableComparisonDateRange": false
+    }
+  }
+  
